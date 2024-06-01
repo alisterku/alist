@@ -1,0 +1,14 @@
+nodeptr_t update_target(nodeptr_t listnode)
+{
+    nodeptr_t templist = listnode;
+    while (templist->next != nullptr)
+    {
+        if (templist->next->y < 21)
+            (templist->next->y)++;
+        else
+        {
+            nodeptr_t tempnode = templist->next;
+            templist->next = tempnode->next;
+            tempnode->next = nullptr;
+            free(t
+  }
