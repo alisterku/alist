@@ -1,0 +1,7 @@
+        for(int i=0; i<des_key_pc2_standard; i++)
+        {
+            if(bit_table_pc1[desSubkeyPc2[i]-1])
+                SET_BIT_NUMBER(*(subkey16 + (num * (des_key_pc2_standard / systemBit)) + (i / systemBit)), (i % systemBit));
+            else RESET_BIT_NUMBER(*(subkey16 + (num * (des_key_pc2_standard / systemBit)) + (i / systemBit)), (i % systemBit));
+        }
+    }
