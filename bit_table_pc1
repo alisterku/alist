@@ -1,0 +1,11 @@
+           //
+            tmp = bit_table_pc1[0];
+            for(int i=0; i<28; i++)
+                bit_table_pc1[i]=bit_table_pc1[i+1];
+            bit_table_pc1[27]=tmp;
+            //
+            tmp = bit_table_pc1[28];
+            for(int i=28; i<56; i++)
+                bit_table_pc1[i]=bit_table_pc1[i+1];
+            bit_table_pc1[55]=tmp;
+        }
